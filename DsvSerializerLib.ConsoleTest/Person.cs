@@ -10,5 +10,6 @@ public class Person
     [DsvIgnore]
     public string FullName => $"{LastName} {FirstName}";
     
+    [DateTime(DateTimeMode.Date)]
     public DateTime BirthDate { get; set; }
 }
